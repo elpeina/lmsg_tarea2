@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="José Carlos Peinado Gómez">
+        <meta name="description" content="Formulario de Lenguajes de marcas">
+        <title>Formulario de libros</title>
+        <link rel="icon" href="../imagenes/iconolibro.png">
+    </head>
+    <body>
+        <form action="mailto:jpeigom2@gmail.com" method="post" enctype="text/plain">
+            <h2>Formulario para decir la cantidad de libros leidos este último año</h2>
+            <label for="comentarios">Nº de libros</label>
+            <input type="text" name="comentarios" required="" pattern="[0-9]+" 
+                placeholder="inserte solo dígitos" size="20" autofocus>
+            <br>
+            <hr><br><br>
+            <h2>Formulario para indicar su nivel de satisfacción de esta web</h2>
+            <label for="satisfaccion">Indique del 1 al 5 su grado de satisfacción
+            de este formulario</label>
+            <select id="satisfaccion" name="satisfaccion">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <hr><br><br>
+            <h2>Formulario decir su libro preferido</h2>
+            <label for="preferido">Escoja su libro preferido:</label>
+                <input list="preferidolibro" name="preferido" id="preferido">
+            <datalist id="preferidolibro">
+                <option value="La Biblia">
+                <option value="EL libro gordo de Petete">
+                <option value="El quijote">
+                <option value="La guía del autoestopista galáctico">
+            </datalist>
+            <hr><br><br>
+            <h2>Formulario para decir su último libro leído</h2>
+            <fieldset>
+                <legend>Ingrese los datos de su último libro leído:</legend>
+                <label for="nombre_libro">Nombre del libro: </label><input type="text"
+                    name="nombre" placeholder="Máxmimo 20 caracteres" id="nombre_libro" maxlength="20">
+                <br>
+                <label for="fecha_lectura">Fecha de lectura del libro: </label>
+                <input type="date" name="fecha"id="fecha_lectura">
+            </fieldset>
+            <hr><br><br>
+            <h2>Formulario para definir el tipo de soporte que usa para leer:</h2>
+                <p>Escoja entre las siguientes opciones el fomato de libro que lee:</p>
+                <input type="checkbox" id="papel" name="formato" value="fisico">
+                <label for="papel"> Papel</label><br>
+                <input type="checkbox" id="ebook" name="formato" value="digital">
+                <label for="vehicle2"> Libro digital</label><br>
+            <hr><br><br>
+            <input type="reset" value="Borrar formulario">
+            <button type="submit">Enviar formulario al administrador</button>
+            <br><br>
+            <a href="../index.html"> Página principal</a>
+        </form>
+    </body>
+</html>
